@@ -22,7 +22,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/menu">
+        app:menu="@menu/menu"
+        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/black">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
@@ -36,41 +38,56 @@
         android:background="@drawable/nav_bg"
         app:layout_constraintBottom_toTopOf="@+id/bnav_bar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        >
 
         <RadioButton
+            android:textColor="@color/black"
+            android:fontFamily="@font/okkorea"
             android:id="@+id/radio1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="월"
             android:checked="true"/>
         <RadioButton
+            android:textColor="@color/black"
+            android:fontFamily="@font/okkorea"
             android:id="@+id/radio2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="화"/>
         <RadioButton
+            android:textColor="@color/black"
+            android:fontFamily="@font/okkorea"
             android:id="@+id/radio3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="수"/>
         <RadioButton
+            android:textColor="@color/black"
+            android:fontFamily="@font/okkorea"
             android:id="@+id/radio4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="목" />
 
         <RadioButton
+            android:textColor="@color/black"
+            android:fontFamily="@font/okkorea"
             android:id="@+id/radio5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="금"/>
         <RadioButton
+            android:textColor="@color/black"
+            android:fontFamily="@font/okkorea"
             android:id="@+id/radio6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="토"/>
         <RadioButton
+            android:textColor="@color/black"
+            android:fontFamily="@font/okkorea"
             android:id="@+id/radio7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -82,15 +99,72 @@
         android:id="@+id/pieChart"
         android:layout_width="match_parent"
         android:layout_height="400sp"
+        android:layout_marginTop="44dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.button.MaterialButton
+    <androidx.appcompat.widget.AppCompatButton
+        android:textColor="@color/black"
+        android:id="@+id/deleteman"
         android:layout_width="100sp"
         android:layout_height="50sp"
         android:layout_marginBottom="28dp"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup"
-        app:layout_constraintStart_toStartOf="@+id/radioGroup" />
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        android:background="@drawable/nav_bg2"
+        android:text="지우기"
+        android:textSize="15sp"
+        android:fontFamily="@font/okkorea"
 
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:id="@+id/saveButton"
+        android:text="저장하기"
+        android:fontFamily="@font/okkorea"
+        android:background="@drawable/nav_bg2"
+        android:layout_width="100sp"
+        android:layout_height="50sp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/deleteman"
+        app:layout_constraintStart_toStartOf="@+id/deleteman"
+        />
+
+    <EditText
+        android:textColor="@color/black"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/nav_bg2"
+        android:fontFamily="@font/okkorea"
+        android:hint="시간"
+        android:inputType="number"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:padding="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/saveButton"
+        app:layout_constraintTop_toTopOf="@+id/saveButton"
+        android:id="@+id/editPercent"/>
+
+    <EditText
+        android:textColor="@color/black"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/nav_bg2"
+        android:fontFamily="@font/okkorea"
+        android:hint="카테고리"
+        android:inputType="number"
+        android:maxLength="2"
+        android:id="@+id/editCategory"
+        android:maxLines="1"
+        android:padding="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/deleteman"
+        app:layout_constraintTop_toTopOf="@+id/deleteman" />
 </androidx.constraintlayout.widget.ConstraintLayout>
