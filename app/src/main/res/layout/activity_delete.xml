@@ -165,7 +165,7 @@
         android:layout_marginEnd="152dp"
         android:background="@drawable/nav_bg2"
         android:fontFamily="@font/okkorea"
-        android:text="저장하기"
+        android:text="저장하러 가기"
         android:textColor="@color/black"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup"
