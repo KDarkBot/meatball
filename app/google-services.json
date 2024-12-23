@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "930395763525",
+    "project_id": "meatballisfu",
+    "storage_bucket": "meatballisfu.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930395763525:android:816d5fad8710bced6c442c",
+        "android_client_info": {
+          "package_name": "com.example.realmeatball22222"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOGcg6xhqjO1HBlJXF4R4wBc5BOjdZqm4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
