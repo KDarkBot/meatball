@@ -158,7 +158,7 @@
         android:layout_marginStart="28dp"
         android:background="@drawable/nav_bg2"
         android:fontFamily="@font/okkorea"
-        android:hint="카테고리"
+        android:hint="일정"
         android:inputType="number"
         android:maxLength="2"
         android:id="@+id/editCategory"
