@@ -110,7 +110,7 @@
         android:id="@+id/editCategoryToDelete"
         android:layout_width="217dp"
         android:layout_height="47dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="28dp"
         android:layout_marginBottom="64dp"
         android:background="@drawable/nav_bg2"
         android:fontFamily="@font/okkorea"
@@ -144,18 +144,18 @@
         android:id="@+id/deleteAllButton"
         android:layout_width="100sp"
         android:layout_height="50sp"
-        android:layout_marginEnd="248dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginStart="28dp"
         android:background="@drawable/nav_bg2"
         android:fontFamily="@font/okkorea"
+
+
         android:text="전체 지우기"
-
-
         android:textColor="@color/black"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup"
-
-        app:layout_constraintEnd_toEndOf="@+id/radioGroup" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pieChart"
+        app:layout_constraintVertical_bias="0.862" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/savegoto"
